@@ -17,9 +17,9 @@ public class ConexionPostgres {
 	    private XMLGenerator generador;
 	    public void realizarConexion() throws SQLException{
 	            
-	            String urlDatabase = "jdbc:postgresql://localhost:5432/facturacion"; 
+	            String urlDatabase = "jdbc:postgresql://192.168.1.40:5432/facturacion"; 
 	            try {
-	                conn = DriverManager.getConnection(urlDatabase, "postgres", "beatles1997");
+	                conn = DriverManager.getConnection(urlDatabase, "postgres", "admin");
 	            } catch (Exception e) {
 	                System.out.println("Ocurrio un error : "+e.getMessage());
 	            }

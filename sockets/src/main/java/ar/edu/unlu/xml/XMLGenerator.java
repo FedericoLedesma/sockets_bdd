@@ -77,34 +77,34 @@ public class XMLGenerator {
             //  
             for(int i=0;i<colum1.size();i++){
             
-            Element fila = document.createElement ("row");//+String.valueOf(i));
-            if(!(colum1.isEmpty())) {
-            Element valorColumna1= document.createElement("col1");            
-            Text textColumna1 = document.createTextNode(colum1.get(i));
-            valorColumna1.appendChild(textColumna1);
-            fila.appendChild(valorColumna1);
-            
-            }
-            if(!(colum2.isEmpty())) {
-            Element valorColumna2= document.createElement("col2");
-            Text textColumna2 = document.createTextNode(colum2.get(i));
-            valorColumna2.appendChild(textColumna2);
-            fila.appendChild(valorColumna2);
-            }
-            if(!(colum3.isEmpty())) {
-            Element valorColumna3= document.createElement("col3");
-            Text textColumna3 = document.createTextNode(colum3.get(i));
-            valorColumna3.appendChild(textColumna3);
-            fila.appendChild(valorColumna3);
-            }
-            if(!(colum4.isEmpty())) {
-            Element valorColumna4= document.createElement("col4"); 
-            Text textColumna4 = document.createTextNode(colum4.get(i));
-            valorColumna4.appendChild(textColumna4);
-            fila.appendChild(valorColumna4);
-            filas.appendChild(fila);
-            document.getDocumentElement().appendChild(filas);
-            }
+	            Element fila = document.createElement ("row");//+String.valueOf(i));
+	            if(!(colum1.isEmpty())) {
+		            Element valorColumna1= document.createElement("col1");            
+		            Text textColumna1 = document.createTextNode(colum1.get(i));
+		            valorColumna1.appendChild(textColumna1);
+		            fila.appendChild(valorColumna1);
+	            
+	            }
+	            if(!(colum2.isEmpty())) {
+		            Element valorColumna2= document.createElement("col2");
+		            Text textColumna2 = document.createTextNode(colum2.get(i));
+		            valorColumna2.appendChild(textColumna2);
+		            fila.appendChild(valorColumna2);
+	            }
+	            if(!(colum3.isEmpty())) {
+		            Element valorColumna3= document.createElement("col3");
+		            Text textColumna3 = document.createTextNode(colum3.get(i));
+		            valorColumna3.appendChild(textColumna3);
+		            fila.appendChild(valorColumna3);
+	            }
+	            if(!(colum4.isEmpty())) {
+		            Element valorColumna4= document.createElement("col4"); 
+		            Text textColumna4 = document.createTextNode(colum4.get(i));
+		            valorColumna4.appendChild(textColumna4);
+		            fila.appendChild(valorColumna4);
+		           }
+	            filas.appendChild(fila);
+	            document.getDocumentElement().appendChild(filas);
             }
             // Asocio el source con el Document
             Source source = new DOMSource(document);

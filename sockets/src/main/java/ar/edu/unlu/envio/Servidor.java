@@ -21,7 +21,7 @@ import ar.edu.unlu.bd.ConexionFirebird;
 import ar.edu.unlu.bd.ConexionPostgres;
 
 public class Servidor {
-	private String nombreArchivo = "C:\\Users\\feder\\eclipse-workspace\\POO2018\\sockets\\query.xml";
+	private String nombreArchivo = "C:\\Users\\feder\\git\\repository\\sockets\\query.xml";
 	private ServerSocket servidor = null;
 	private Socket socket;
 	private DataOutputStream dos;
